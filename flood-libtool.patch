@@ -1,0 +1,27 @@
+--- flood-0.4/build/rules.mk~	2006-08-08 03:33:57.183949159 +0300
++++ flood-0.4/build/rules.mk	2006-08-08 03:35:03.485431621 +0300
+@@ -73,11 +73,11 @@
+ COMPILE      = $(CC)  $(ALL_CFLAGS) $(ALL_CPPFLAGS) $(ALL_INCLUDES)
+ CXX_COMPILE  = $(CXX) $(ALL_CXXFLAGS) $(ALL_CPPFLAGS) $(ALL_INCLUDES)
+ 
+-SH_COMPILE     = $(LIBTOOL) $(LTFLAGS) --mode=compile $(COMPILE)  -c $< && touch $@
+-SH_CXX_COMPILE = $(LIBTOOL) $(LTFLAGS) --mode=compile $(CXX_COMPILE)  -c $< && touch $@
++SH_COMPILE     = $(LIBTOOL) $(LTFLAGS) --mode=compile --tag=CC $(COMPILE)  -c $< && touch $@
++SH_CXX_COMPILE = $(LIBTOOL) $(LTFLAGS) --mode=compile --tag=CXX $(CXX_COMPILE)  -c $< && touch $@
+ 
+-LT_COMPILE     = $(LIBTOOL) $(LTFLAGS) --mode=compile $(COMPILE)  -c $< && touch $@
+-LT_CXX_COMPILE = $(LIBTOOL) $(LTFLAGS) --mode=compile $(CXX_COMPILE)  -c $< && touch $@
++LT_COMPILE     = $(LIBTOOL) $(LTFLAGS) --mode=compile --tag=CC $(COMPILE)  -c $< && touch $@
++LT_CXX_COMPILE = $(LIBTOOL) $(LTFLAGS) --mode=compile --tag=CXX $(CXX_COMPILE)  -c $< && touch $@
+ 
+ # Link-related commands
+ 
+@@ -247,7 +247,7 @@
+ 
+ # Makes an import library from a def file
+ .def.la:
+-	$(LIBTOOL) --mode=compile $(MK_IMPLIB) -o $@ $<
++	$(LIBTOOL) --mode=compile --tag=CC $(MK_IMPLIB) -o $@ $<
+ 
+ #
+ # Dependencies
