@@ -1,13 +1,14 @@
 Summary:	Profile-driven HTTP load tester
+Summary(pl):	Tester obci±¿enia HTTP sterowany profilami
 Name:		flood
 Version:	0.4
 Release:	0.1
 License:	Apache
 Group:		Applications/Networking
-URL:		http://httpd.apache.org/test/flood/
 Source0:	http://www.apache.org/dist/httpd/flood/%{name}-%{version}.tar.gz
 # Source0-md5:	c10abd6f46175ab54b554337525d576d
 Patch0:		%{name}-libtool.patch
+URL:		http://httpd.apache.org/test/flood/
 BuildRequires:	apr-devel
 BuildRequires:	apr-util-devel
 BuildRequires:	autoconf
@@ -17,6 +18,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Flood is a profile-driven HTTP load tester. It can be used to gather
 important performance matrics for your website.
+
+%description -l pl
+Flood to tester obci±¿enia HTTP sterowany profilami. Mo¿na go u¿ywaæ
+do zebrania tabeli istotnych informacji o wydajno¶ci w³asnego serwisu
+WWW.
 
 %prep
 %setup -q
