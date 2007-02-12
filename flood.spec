@@ -1,5 +1,5 @@
 Summary:	Profile-driven HTTP load tester
-Summary(pl.UTF-8):   Tester obciążenia HTTP sterowany profilami
+Summary(pl.UTF-8):	Tester obciążenia HTTP sterowany profilami
 Name:		flood
 Version:	0.4
 Release:	0.1
