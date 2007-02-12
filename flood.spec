@@ -1,5 +1,5 @@
 Summary:	Profile-driven HTTP load tester
-Summary(pl):	Tester obci±¿enia HTTP sterowany profilami
+Summary(pl.UTF-8):   Tester obciÄ…Å¼enia HTTP sterowany profilami
 Name:		flood
 Version:	0.4
 Release:	0.1
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Flood is a profile-driven HTTP load tester. It can be used to gather
 important performance matrics for your website.
 
-%description -l pl
-Flood to tester obci±¿enia HTTP sterowany profilami. Mo¿na go u¿ywaæ
-do zebrania tabeli istotnych informacji o wydajno¶ci w³asnego serwisu
+%description -l pl.UTF-8
+Flood to tester obciÄ…Å¼enia HTTP sterowany profilami. MoÅ¼na go uÅ¼ywaÄ‡
+do zebrania tabeli istotnych informacji o wydajnoÅ›ci wÅ‚asnego serwisu
 WWW.
 
 %prep
